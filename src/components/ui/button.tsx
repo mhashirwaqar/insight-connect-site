@@ -15,7 +15,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-muted hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Custom variants for QuickLedger
+        // Custom variants for QuantBooks
         cta: "bg-accent text-accent-foreground hover:brightness-110 shadow-glow font-semibold",
         "cta-outline": "border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold",
         hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-elevated hover:shadow-floating font-semibold",

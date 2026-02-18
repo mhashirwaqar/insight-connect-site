@@ -457,7 +457,7 @@ export default function Intake() {
                       onChange={(e) =>
                         setFormData({ ...formData, contactPhone: e.target.value })
                       }
-                      placeholder="(555) 555-5555"
+                      placeholder="+1 (403) 421-0064"
                     />
                   </div>
                 </div>

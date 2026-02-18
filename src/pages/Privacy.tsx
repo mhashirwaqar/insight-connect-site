@@ -15,7 +15,7 @@ export default function Privacy() {
               <section>
                 <h2 className="text-2xl font-display font-semibold mb-4">1. Introduction</h2>
                 <p className="text-muted-foreground">
-                  QuickLedger ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our bookkeeping services.
+                  QuantBooks ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our bookkeeping services.
                 </p>
               </section>
 
@@ -78,9 +78,9 @@ export default function Privacy() {
                   If you have questions about this Privacy Policy, please contact us at:
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  <strong>Email:</strong> hello@quickledger.example<br />
-                  <strong>Phone:</strong> (555) 555-5555<br />
-                  <strong>Address:</strong> 123 Business Lane, Suite 100, San Francisco, CA 94102
+                  <strong>Email:</strong> mhaashir.services@gmail.com<br />
+                  <strong>Phone:</strong> +1 (403) 421-0064<br />
+                  <strong>Address:</strong> Hawkdale Gate, NW, Calgary, AB
                 </p>
               </section>
             </div>

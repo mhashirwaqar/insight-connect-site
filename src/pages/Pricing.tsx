@@ -11,7 +11,7 @@ import {
 const tiers = [
   {
     name: "Starter",
-    price: "$349",
+    price: "$175",
     description: "For simple businesses with straightforward bookkeeping needs.",
     idealFor: "Solo operators, freelancers, simple service businesses",
     features: [
@@ -30,7 +30,7 @@ const tiers = [
   },
   {
     name: "Growth",
-    price: "$599",
+    price: "$350",
     description: "For growing businesses that need more insight and support.",
     idealFor: "Small teams, e-commerce, service businesses with employees",
     features: [
@@ -49,7 +49,7 @@ const tiers = [
   },
   {
     name: "Pro",
-    price: "$999",
+    price: "$599",
     description: "For complex operations that need personalized attention.",
     idealFor: "Multi-location, inventory, higher transaction volumes",
     features: [

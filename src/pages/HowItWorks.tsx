@@ -163,7 +163,7 @@ export default function HowItWorks() {
               Timeline expectations
             </h2>
             <p className="text-lg text-muted-foreground">
-              Here's what to expect when you start with QuickLedger
+              Here's what to expect when you start with QuantBooks
             </p>
           </div>
           <div className="space-y-4">
