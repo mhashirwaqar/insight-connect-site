@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Mail, Phone, MapPin, Shield, Lock } from "lucide-react";
 
 const footerNavigation = {
@@ -21,11 +21,19 @@ const footerNavigation = {
 };
 
 export function Footer() {
+  const location = useLocation();
+
+  const handleLinkClick = (href: string) => {
+    if (location.pathname === href || location.pathname + location.hash === href) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="section-container py-16 md:py-20">
+      <div className="section-container py-10 md:py-12">
         {/* Trust badges */}
-        <div className="flex flex-wrap justify-center gap-8 mb-12 pb-12 border-b border-primary-foreground/10">
+        <div className="flex flex-wrap justify-center gap-8 mb-8 pb-8 border-b border-primary-foreground/10">
           <div className="flex items-center gap-2 text-sm text-primary-foreground/80">
             <Shield className="w-5 h-5" />
             <span>Bank-level Security</span>
@@ -54,11 +62,11 @@ export function Footer() {
             </p>
             <div className="space-y-3">
               <a
-                href="mailto:mhaashir.services@gmail.com"
+                href="mailto:mhashir.services@gmail.com"
                 className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                mhaashir.services@gmail.com
+                mhashir.services@gmail.com
               </a>
               <a
                 href="tel:+14034210064"
@@ -84,6 +92,7 @@ export function Footer() {
                 <li key={item.name}>
                   <Link
                     to={item.href}
+                    onClick={() => handleLinkClick(item.href)}
                     className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
                   >
                     {item.name}
@@ -103,6 +112,7 @@ export function Footer() {
                 <li key={item.name}>
                   <Link
                     to={item.href}
+                    onClick={() => handleLinkClick(item.href)}
                     className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
                   >
                     {item.name}
@@ -122,6 +132,7 @@ export function Footer() {
                 <li key={item.name}>
                   <Link
                     to={item.href}
+                    onClick={() => handleLinkClick(item.href)}
                     className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
                   >
                     {item.name}

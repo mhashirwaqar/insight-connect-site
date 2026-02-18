@@ -78,7 +78,7 @@ export default function Privacy() {
                   If you have questions about this Privacy Policy, please contact us at:
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  <strong>Email:</strong> mhaashir.services@gmail.com<br />
+                  <strong>Email:</strong> mhashir.services@gmail.com<br />
                   <strong>Phone:</strong> +1 (403) 421-0064<br />
                   <strong>Address:</strong> Hawkdale Gate, NW, Calgary, AB
                 </p>
