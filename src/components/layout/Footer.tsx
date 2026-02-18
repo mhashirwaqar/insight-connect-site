@@ -47,29 +47,29 @@ export function Footer() {
               <div className="w-8 h-8 rounded-lg bg-primary-foreground flex items-center justify-center">
                 <span className="text-primary font-display font-bold text-lg">Q</span>
               </div>
-              <span className="font-display font-bold text-xl">QuickLedger</span>
+              <span className="font-display font-bold text-xl">QuantBooks</span>
             </Link>
             <p className="text-sm text-primary-foreground/70 mb-6 max-w-xs">
               Bookkeeping made simple. Insights made automatic. We handle your books so you can focus on growing your business.
             </p>
             <div className="space-y-3">
               <a
-                href="mailto:hello@quickledger.example"
+                href="mailto:mhaashir.services@gmail.com"
                 className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                hello@quickledger.example
+                mhaashir.services@gmail.com
               </a>
               <a
-                href="tel:+15555555555"
+                href="tel:+14034210064"
                 className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                (555) 555-5555
+                +1 (403) 421-0064
               </a>
               <div className="flex items-start gap-2 text-sm text-primary-foreground/80">
                 <MapPin className="w-4 h-4 mt-0.5" />
-                <span>123 Business Lane<br />Suite 100<br />San Francisco, CA 94102</span>
+                <span>Hawkdale Gate, NW<br />Calgary, AB</span>
               </div>
             </div>
           </div>
@@ -135,10 +135,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/60">
-            © {new Date().getFullYear()} QuickLedger. All rights reserved.
+            © {new Date().getFullYear()} QuantBooks. All rights reserved.
           </p>
           <p className="text-xs text-primary-foreground/40">
-            QuickLedger provides bookkeeping services only. We do not provide tax advice, legal advice, or accounting services requiring a CPA license.
+            QuantBooks provides bookkeeping services only. We do not provide tax advice, legal advice, or accounting services requiring a CPA license.
           </p>
         </div>
       </div>

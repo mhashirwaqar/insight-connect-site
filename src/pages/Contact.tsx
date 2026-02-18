@@ -270,27 +270,25 @@ export default function Contact() {
                 <h3 className="font-display font-semibold mb-6">Contact Info</h3>
                 <div className="space-y-4">
                   <a
-                    href="mailto:hello@quickledger.example"
+                    href="mailto:mhaashir.services@gmail.com"
                     className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <Mail className="w-5 h-5" />
-                    hello@quickledger.example
+                    mhaashir.services@gmail.com
                   </a>
                   <a
-                    href="tel:+15555555555"
+                    href="tel:+14034210064"
                     className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    (555) 555-5555
+                    +1 (403) 421-0064
                   </a>
                   <div className="flex items-start gap-3 text-muted-foreground">
                     <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
                     <span>
-                      123 Business Lane
+                      Hawkdale Gate, NW
                       <br />
-                      Suite 100
-                      <br />
-                      San Francisco, CA 94102
+                      Calgary, AB
                     </span>
                   </div>
                 </div>
@@ -311,7 +309,7 @@ export default function Contact() {
                   </p>
                   <Button asChild variant="outline" size="sm">
                     <a
-                      href="https://calendly.com"
+                      href="https://calendly.com/mhashir-services/30min"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

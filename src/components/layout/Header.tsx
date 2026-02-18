@@ -41,7 +41,7 @@ export function Header() {
               <span className="text-primary-foreground font-display font-bold text-lg">Q</span>
             </div>
             <span className="font-display font-bold text-xl text-foreground">
-              QuickLedger
+              QuantBooks
             </span>
           </Link>
 
@@ -66,11 +66,11 @@ export function Header() {
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+15555555555"
+              href="tel:+14034210064"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span>(555) 555-5555</span>
+              <span>+1 (403) 421-0064</span>
             </a>
             <Button asChild variant="cta" size="default">
               <Link to="/intake">Book a Free Consult</Link>
@@ -113,11 +113,11 @@ export function Header() {
               ))}
               <div className="mt-4 pt-4 border-t border-border space-y-3">
                 <a
-                  href="tel:+15555555555"
+                  href="tel:+14034210064"
                   className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>(555) 555-5555</span>
+                  <span>+1 (403) 421-0064</span>
                 </a>
                 <div className="px-4">
                   <Button asChild variant="cta" className="w-full">

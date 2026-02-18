@@ -62,7 +62,7 @@ const steps = [
 const testimonials = [
   {
     quote:
-      "QuickLedger saved me hours every month. Now I actually understand my numbers.",
+      "QuantBooks saved me hours every month. Now I actually understand my numbers.",
     author: "Sarah Chen",
     role: "Founder, Bloom Design Co.",
   },
@@ -104,9 +104,9 @@ const faqs = [
 ];
 
 const pricingTiers = [
-  { name: "Starter", price: "$349", label: "For simple businesses" },
-  { name: "Growth", price: "$599", label: "Most popular" },
-  { name: "Pro", price: "$999", label: "For complex operations" },
+  { name: "Starter", price: "$175", label: "For simple businesses" },
+  { name: "Growth", price: "$350", label: "Most popular" },
+  { name: "Pro", price: "$599", label: "For complex operations" },
 ];
 
 export default function Index() {
@@ -151,7 +151,7 @@ export default function Index() {
       <section className="bg-muted py-12 border-y border-border">
         <div className="section-container">
           <p className="text-center text-sm text-muted-foreground mb-8">
-            Trusted by 500+ small businesses across North America
+            Trusted by 500+ small businesses across Canada
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (

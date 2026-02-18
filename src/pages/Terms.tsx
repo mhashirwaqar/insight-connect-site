@@ -15,14 +15,14 @@ export default function Terms() {
               <section>
                 <h2 className="text-2xl font-display font-semibold mb-4">1. Agreement to Terms</h2>
                 <p className="text-muted-foreground">
-                  By accessing or using QuickLedger's services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+                  By accessing or using QuantBooks's services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-display font-semibold mb-4">2. Services Provided</h2>
                 <p className="text-muted-foreground mb-4">
-                  QuickLedger provides bookkeeping services, including but not limited to:
+                  QuantBooks provides bookkeeping services, including but not limited to:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                   <li>Monthly bookkeeping and reconciliation</li>
@@ -64,7 +64,7 @@ export default function Terms() {
               <section>
                 <h2 className="text-2xl font-display font-semibold mb-4">6. Limitation of Liability</h2>
                 <p className="text-muted-foreground">
-                  QuickLedger shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services. Our total liability shall not exceed the fees paid by you in the twelve months preceding the claim.
+                  QuantBooks shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services. Our total liability shall not exceed the fees paid by you in the twelve months preceding the claim.
                 </p>
               </section>
 
@@ -78,7 +78,7 @@ export default function Terms() {
               <section>
                 <h2 className="text-2xl font-display font-semibold mb-4">8. Disclaimer</h2>
                 <p className="text-muted-foreground">
-                  The information and services provided by QuickLedger are for general bookkeeping purposes only and should not be construed as tax, legal, or professional advice. Consult with a qualified professional for specific advice.
+                  The information and services provided by QuantBooks are for general bookkeeping purposes only and should not be construed as tax, legal, or professional advice. Consult with a qualified professional for specific advice.
                 </p>
               </section>
 
@@ -95,9 +95,9 @@ export default function Terms() {
                   For questions about these Terms of Service, please contact us at:
                 </p>
                 <p className="text-muted-foreground mt-4">
-                  <strong>Email:</strong> hello@quickledger.example<br />
-                  <strong>Phone:</strong> (555) 555-5555<br />
-                  <strong>Address:</strong> 123 Business Lane, Suite 100, San Francisco, CA 94102
+                  <strong>Email:</strong> mhaashir.services@gmail.com<br />
+                  <strong>Phone:</strong> +1 (403) 421-0064<br />
+                  <strong>Address:</strong> Hawkdale Gate, NW, Calgary, AB
                 </p>
               </section>
             </div>
