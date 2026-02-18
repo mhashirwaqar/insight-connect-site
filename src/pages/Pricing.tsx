@@ -72,19 +72,19 @@ const addons = [
   {
     name: "Catch-up Bookkeeping",
     description: "Get your books current from months or years behind",
-    pricing: "Starting at $500/month of backlog",
+    pricing: "Starting at $350/month of backlog",
     note: "Price varies based on transaction volume and complexity",
   },
   {
     name: "Cleanup Projects",
     description: "Fix messy books, correct errors, and optimize your chart of accounts",
-    pricing: "Starting at $750",
+    pricing: "Starting at $200",
     note: "One-time fee based on scope",
   },
   {
     name: "Additional Transactions",
     description: "Need more than your plan includes?",
-    pricing: "$1.50/transaction over limit",
+    pricing: "$0.75/transaction over limit",
     note: "Billed at end of month",
   },
 ];

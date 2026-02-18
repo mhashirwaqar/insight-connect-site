@@ -151,7 +151,7 @@ export default function Index() {
       <section className="bg-muted py-12 border-y border-border">
         <div className="section-container">
           <p className="text-center text-sm text-muted-foreground mb-8">
-            Trusted by 500+ small businesses across Canada
+            Trusted by many SMEs across Canada
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
