@@ -175,6 +175,7 @@ export default function Intake() {
       });
 
       setIsSubmitted(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
       toast.success("Intake form submitted successfully!");
     } catch (error) {
       console.error("Error submitting intake:", error);

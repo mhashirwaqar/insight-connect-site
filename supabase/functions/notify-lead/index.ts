@@ -19,7 +19,7 @@ Deno.serve(async (req) => {
     // TODO: Integrate with email service (SendGrid, Resend, etc.)
     // For now, just log the notification
     const notificationData = {
-      to: "hello@quickledger.example",
+      to: "mhashir.services@gmail.com",
       subject: `New ${leadType === "intake" ? "Client Intake" : "Contact Form"} Submission`,
       body: `
         New lead received!

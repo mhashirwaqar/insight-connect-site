@@ -76,6 +76,7 @@ export default function Contact() {
       });
 
       setIsSubmitted(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
       toast.success("Message sent successfully!");
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -270,11 +271,11 @@ export default function Contact() {
                 <h3 className="font-display font-semibold mb-6">Contact Info</h3>
                 <div className="space-y-4">
                   <a
-                    href="mailto:mhaashir.services@gmail.com"
+                    href="mailto:mhashir.services@gmail.com"
                     className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <Mail className="w-5 h-5" />
-                    mhaashir.services@gmail.com
+                    mhashir.services@gmail.com
                   </a>
                   <a
                     href="tel:+14034210064"
