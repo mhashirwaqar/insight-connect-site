@@ -323,18 +323,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Placeholder */}
-      <section className="h-64 md:h-96 bg-muted relative">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="w-12 h-12 text-muted-foreground/30 mx-auto mb-4" />
-            <p className="text-muted-foreground">Map placeholder</p>
-            <p className="text-sm text-muted-foreground">
-              Embed Google Maps or Mapbox here
-            </p>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 }

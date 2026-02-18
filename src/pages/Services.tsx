@@ -30,7 +30,7 @@ const services = [
       "Invoice and receipt documentation",
       "15-30 minutes monthly for questions",
     ],
-    pricing: "Starting at $349/month",
+    pricing: "Starting at $175/month",
   },
   {
     id: "catchup",
