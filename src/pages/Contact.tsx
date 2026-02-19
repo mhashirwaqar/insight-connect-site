@@ -68,11 +68,14 @@ export default function Contact() {
 
       // Send email notification via EmailJS
       await sendEmailNotification({
-        from_name: formData.name,
-        from_email: formData.email,
-        business_name: formData.businessName,
-        message: `Revenue: ${formData.revenueRange || "N/A"}\nTool: ${formData.bookkeepingTool || "N/A"}\n\n${formData.message}`,
-        form_type: "Contact Form",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.businessName,
+        message: `Contact Form Submission\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || "N/A"}\nBusiness: ${formData.businessName}\nRevenue Range: ${formData.revenueRange || "N/A"}\nBookkeeping Tool: ${formData.bookkeepingTool || "N/A"}\n\nMessage:\n${formData.message}`,
+        page: window.location.pathname,
+        time: new Date().toLocaleString(),
+        form_data: JSON.stringify(formData),
       });
 
       setIsSubmitted(true);
