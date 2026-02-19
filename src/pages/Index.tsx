@@ -322,7 +322,7 @@ export default function Index() {
       </section>
 
       {/* Final CTA */}
-      <section className="section-padding bg-primary text-primary-foreground">
+      <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
             Ready to simplify your bookkeeping?

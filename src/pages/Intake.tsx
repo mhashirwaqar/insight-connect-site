@@ -16,6 +16,7 @@ import {
 import { CheckCircle, Loader2, ArrowLeft, ArrowRight, Upload, X } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { sendEmailNotification } from "@/lib/emailjs";
 import { cn } from "@/lib/utils";
 
 const steps = [
@@ -164,14 +165,13 @@ export default function Intake() {
 
       if (error) throw error;
 
-      // Send email notification
-      await supabase.functions.invoke("notify-lead", {
-        body: {
-          leadType: "intake",
-          name: formData.contactName,
-          email: formData.contactEmail,
-          businessName: formData.legalName,
-        },
+      // Send email notification via EmailJS
+      await sendEmailNotification({
+        from_name: formData.contactName,
+        from_email: formData.contactEmail,
+        business_name: formData.legalName,
+        message: `New intake form submission.\nIndustry: ${formData.industry}\nEntity: ${formData.entityType}\nPlatform: ${formData.accountingPlatform}\nServices: ${formData.servicesNeeded.join(", ")}\nNotes: ${formData.notes || "None"}`,
+        form_type: "Client Intake Form",
       });
 
       setIsSubmitted(true);
