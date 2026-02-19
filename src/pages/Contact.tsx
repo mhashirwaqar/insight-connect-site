@@ -14,6 +14,7 @@ import {
 import { Mail, Phone, MapPin, CheckCircle, Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { sendEmailNotification } from "@/lib/emailjs";
 
 const revenueRanges = [
   { value: "under-10k", label: "Under $10,000/month" },
@@ -65,14 +66,13 @@ export default function Contact() {
 
       if (error) throw error;
 
-      // Call edge function to send email notification
-      await supabase.functions.invoke("notify-lead", {
-        body: {
-          leadType: "contact",
-          name: formData.name,
-          email: formData.email,
-          businessName: formData.businessName,
-        },
+      // Send email notification via EmailJS
+      await sendEmailNotification({
+        from_name: formData.name,
+        from_email: formData.email,
+        business_name: formData.businessName,
+        message: `Revenue: ${formData.revenueRange || "N/A"}\nTool: ${formData.bookkeepingTool || "N/A"}\n\n${formData.message}`,
+        form_type: "Contact Form",
       });
 
       setIsSubmitted(true);
