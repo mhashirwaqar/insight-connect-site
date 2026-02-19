@@ -7,17 +7,23 @@ const EMAILJS_PUBLIC_KEY = "cfI-UY19MhL7qGI8I";
 emailjs.init(EMAILJS_PUBLIC_KEY);
 
 export async function sendEmailNotification(params: {
-  from_name: string;
-  from_email: string;
-  business_name?: string;
+  name: string;
+  email: string;
+  phone?: string;
+  company?: string;
   message: string;
-  form_type: string;
+  page: string;
+  time: string;
+  form_data: string;
 }) {
   return emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-    from_name: params.from_name,
-    from_email: params.from_email,
-    business_name: params.business_name || "Not provided",
+    name: params.name,
+    email: params.email,
+    phone: params.phone || "Not provided",
+    company: params.company || "Not provided",
     message: params.message,
-    form_type: params.form_type,
+    page: params.page,
+    time: params.time,
+    form_data: params.form_data,
   });
 }

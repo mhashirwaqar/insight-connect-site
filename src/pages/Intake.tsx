@@ -167,11 +167,14 @@ export default function Intake() {
 
       // Send email notification via EmailJS
       await sendEmailNotification({
-        from_name: formData.contactName,
-        from_email: formData.contactEmail,
-        business_name: formData.legalName,
-        message: `New intake form submission.\nIndustry: ${formData.industry}\nEntity: ${formData.entityType}\nPlatform: ${formData.accountingPlatform}\nServices: ${formData.servicesNeeded.join(", ")}\nNotes: ${formData.notes || "None"}`,
-        form_type: "Client Intake Form",
+        name: formData.contactName,
+        email: formData.contactEmail,
+        phone: formData.contactPhone,
+        company: formData.legalName,
+        message: `Client Intake Form Submission\n\nBusiness: ${formData.legalName}\nDBA: ${formData.dba || "N/A"}\nIndustry: ${formData.industry}\nEntity Type: ${formData.entityType}\nState/Province: ${formData.stateProvince}\nCountry: ${formData.country}\nContact: ${formData.contactName}\nEmail: ${formData.contactEmail}\nPhone: ${formData.contactPhone || "N/A"}\nAccounting Platform: ${formData.accountingPlatform}\nBank Accounts: ${formData.bankAccounts}\nCredit Cards: ${formData.creditCards || "N/A"}\nMerchant Accounts: ${formData.merchantAccounts || "N/A"}\nTransaction Volume: ${formData.transactionVolume}\nServices: ${formData.servicesNeeded.join(", ")}\nNotes: ${formData.notes || "None"}`,
+        page: window.location.pathname,
+        time: new Date().toLocaleString(),
+        form_data: JSON.stringify(formData),
       });
 
       setIsSubmitted(true);
