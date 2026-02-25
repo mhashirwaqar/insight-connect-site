@@ -16,6 +16,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import heroImage from "@/assets/hero-accounting.jpg";
+import consultationImage from "@/assets/consultation.jpg";
+import teamImage from "@/assets/team-working.jpg";
 
 const services = [
   {
@@ -114,31 +117,47 @@ export default function Index() {
     <Layout>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-secondary/30 text-primary-foreground">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
+        <div className="absolute inset-0">
+          <img
+            src={heroImage}
+            alt="Professional accountant reviewing financial documents"
+            className="w-full h-full object-cover opacity-15"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60" />
         <div className="section-container section-padding relative">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up opacity-0">
-              Bookkeeping made simple.
-              <br />
-              <span className="text-accent">Insights made automatic.</span>
-            </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-up opacity-0 stagger-1">
-              Stop drowning in receipts and spreadsheets. We handle your books monthly, so you can focus on what you do best—running your business.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0 stagger-2">
-              <Button asChild variant="cta" size="xl">
-                <Link to="/intake">
-                  Book a Free Consult
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="hero-secondary" size="xl">
-                <Link to="/pricing">Get a Quote</Link>
-              </Button>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up opacity-0">
+                Bookkeeping made simple.
+                <br />
+                <span className="text-accent">Insights made automatic.</span>
+              </h1>
+              <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl animate-fade-up opacity-0 stagger-1">
+                Stop drowning in receipts and spreadsheets. We handle your books monthly, so you can focus on what you do best—running your business.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 animate-fade-up opacity-0 stagger-2">
+                <Button asChild variant="cta" size="xl">
+                  <Link to="/intake">
+                    Book a Free Consult
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </Button>
+                <Button asChild variant="hero-secondary" size="xl">
+                  <Link to="/pricing">Get a Quote</Link>
+                </Button>
+              </div>
+              <p className="mt-6 text-sm text-primary-foreground/60 animate-fade-up opacity-0 stagger-3">
+                No credit card required · Free consultation · Cancel anytime
+              </p>
             </div>
-            <p className="mt-6 text-sm text-primary-foreground/60 animate-fade-up opacity-0 stagger-3">
-              No credit card required · Free consultation · Cancel anytime
-            </p>
+            <div className="hidden md:block animate-fade-up opacity-0 stagger-2">
+              <img
+                src={heroImage}
+                alt="Professional accountant reviewing financial documents at modern office"
+                className="rounded-2xl shadow-2xl border border-primary-foreground/10"
+              />
+            </div>
           </div>
         </div>
         {/* Scroll indicator */}
@@ -213,7 +232,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* How It Works Section */}
+      {/* How It Works Section - with image */}
       <section className="section-padding bg-muted">
         <div className="section-container">
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -224,22 +243,31 @@ export default function Index() {
               Getting started is easy. Here's what to expect.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((step, index) => (
-              <div key={index} className="relative">
-                <div className="text-6xl font-display font-bold text-primary/10 absolute -top-4 left-0">
-                  {step.step}
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={consultationImage}
+                alt="Business consultation with accountant"
+                className="w-full h-80 object-cover"
+              />
+            </div>
+            <div className="space-y-8">
+              {steps.map((step, index) => (
+                <div key={index} className="relative flex gap-4">
+                  <div className="text-4xl font-display font-bold text-primary/15 flex-shrink-0 w-12">
+                    {step.step}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-display font-semibold mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="text-muted-foreground">{step.description}</p>
+                  </div>
                 </div>
-                <div className="pt-12">
-                  <h3 className="text-xl font-display font-semibold mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-muted-foreground">{step.description}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          <div className="text-center mt-10">
+          <div className="text-center">
             <Button asChild variant="default" size="lg">
               <Link to="/how-it-works">
                 Learn More
@@ -321,9 +349,16 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-12 md:py-16 bg-primary text-primary-foreground">
-        <div className="section-container text-center">
+      {/* Final CTA with team image */}
+      <section className="relative py-12 md:py-16 bg-primary text-primary-foreground overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={teamImage}
+            alt="Team of accountants collaborating"
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+        <div className="section-container text-center relative">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
             Ready to simplify your bookkeeping?
           </h2>
