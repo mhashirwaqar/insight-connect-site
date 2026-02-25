@@ -126,17 +126,16 @@ export default function Index() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60" />
         <div className="section-container section-padding relative">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up opacity-0">
                 Bookkeeping made simple.
                 <br />
                 <span className="text-accent">Insights made automatic.</span>
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl animate-fade-up opacity-0 stagger-1">
+              <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-up opacity-0 stagger-1">
                 Stop drowning in receipts and spreadsheets. We handle your books monthly, so you can focus on what you do best—running your business.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-up opacity-0 stagger-2">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up opacity-0 stagger-2">
                 <Button asChild variant="cta" size="xl">
                   <Link to="/intake">
                     Book a Free Consult
@@ -150,14 +149,6 @@ export default function Index() {
               <p className="mt-6 text-sm text-primary-foreground/60 animate-fade-up opacity-0 stagger-3">
                 No credit card required · Free consultation · Cancel anytime
               </p>
-            </div>
-            <div className="hidden md:block animate-fade-up opacity-0 stagger-2">
-              <img
-                src={heroImage}
-                alt="Professional accountant reviewing financial documents at modern office"
-                className="rounded-2xl shadow-2xl border border-primary-foreground/10"
-              />
-            </div>
           </div>
         </div>
         {/* Scroll indicator */}

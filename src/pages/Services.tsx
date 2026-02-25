@@ -104,15 +104,8 @@ export default function Services() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative bg-primary text-primary-foreground section-padding overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src={bookkeepingDeskImage}
-            alt="Professional bookkeeping workspace"
-            className="w-full h-full object-cover opacity-12"
-          />
-        </div>
-        <div className="section-container relative">
+      <section className="bg-primary text-primary-foreground section-padding">
+        <div className="section-container">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">
               Services built for busy business owners
@@ -142,16 +135,6 @@ export default function Services() {
               >
                 <div className={`grid md:grid-cols-2 gap-12 items-start ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
                   <div className={index % 2 === 1 ? 'md:col-start-2' : ''}>
-                    {/* Show image for first and last service */}
-                    {(index === 0 || index === services.length - 1) && (
-                      <div className="rounded-xl overflow-hidden mb-6 shadow-lg">
-                        <img
-                          src={index === 0 ? bookkeepingDeskImage : financialReportsImage}
-                          alt={index === 0 ? "Organized bookkeeping workspace" : "Financial reports and analytics"}
-                          className="w-full h-48 object-cover"
-                        />
-                      </div>
-                    )}
                     <div className="w-14 h-14 rounded-xl bg-secondary flex items-center justify-center mb-6">
                       <service.icon className="w-7 h-7 text-secondary-foreground" />
                     </div>

@@ -90,11 +90,8 @@ export default function HowItWorks() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative bg-primary text-primary-foreground section-padding overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={consultationImage} alt="Professional consultation" className="w-full h-full object-cover opacity-12" />
-        </div>
-        <div className="section-container relative">
+      <section className="bg-primary text-primary-foreground section-padding">
+        <div className="section-container">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">
               How it works
@@ -248,11 +245,8 @@ export default function HowItWorks() {
       </section>
 
       {/* CTA */}
-      <section className="relative section-padding bg-primary text-primary-foreground overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={teamImage} alt="Accounting team collaboration" className="w-full h-full object-cover opacity-10" />
-        </div>
-        <div className="section-container text-center relative">
+      <section className="section-padding bg-primary text-primary-foreground">
+        <div className="section-container text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
             Ready to get started?
           </h2>
